@@ -1,0 +1,40 @@
+repos:
+- repo: https://github.com/pycqa/isort
+  rev: 5.12.0
+  hooks:
+    - id: isort
+      name: isort (python)
+      args: ["--profile", "black", "--filter-files"]
+   
+- repo: https://github.com/pre-commit/mirrors-autopep8
+  rev: ''
+  hooks:
+      - id: autopep8
+        exclude: '^$'  # Specify files or patterns to exclude, '^$' excludes nothing (all files will be checked)
+
+- repo: https://github.com/PyCQA/flake8
+  rev: 6.0.0
+  hooks:
+  - id: flake8
+    args: [--ignore=E501]
+
+- repo: https://github.com/PyCQA/autoflake
+  rev: v2.2.0
+  hooks:
+    - id: autoflake    
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  # Ruff version.
+  rev: v0.0.280
+  hooks:
+    - id: ruff
+      name: ruff
+      args: [--fix]
+      language: system
+      types_or: [ python, pyi ]
+      
+# Black
+- repo: https://github.com/psf/black
+  rev: 23.1.0
+  hooks:
+    - id: black
