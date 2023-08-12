@@ -16,6 +16,9 @@ trained_models/
 #ignore executable files
 *.exe
 
+#precommit files
+.ruff_cache/
+
 # C extensions
 *.so
 
