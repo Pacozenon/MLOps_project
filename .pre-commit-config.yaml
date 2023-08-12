@@ -1,3 +1,4 @@
+files: ^1-Baseline/
 repos:
 - repo: https://github.com/pycqa/isort
   rev: 5.12.0
