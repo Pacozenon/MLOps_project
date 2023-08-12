@@ -26,6 +26,19 @@ Part II
     OOP (Classes, methods, transformers, pipelines)
     REST API - FastAPI
 
+
+
+# About this notebook
+This notebook was taken and changed from [Kaggle](http://www.kaggle.com)
+
+The task is to predict online payment fraud, given a number of features from online transfer/deposits transactions.
+
+
+## Final Project
+
+Project focused on MLOps, where the key concepts of ML frameworks learned on this course were applied in a holistic approach.
+
+
 This session talks about one of the most important practices to be able to climb an ML system: refactorization. Topics such as the directories structure of an ML system are included, the weaknesses that a notebook has to use in production, and a demo to refactorize an existing project.
 
 ## Setup

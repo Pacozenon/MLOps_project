@@ -5,31 +5,19 @@ ___
 #### Student:   Francisco Javier Torres Zenón  A01688757
 ____
 
-
-## Final Project
-
-Project focused on MLOps, where the key concepts of ML frameworks learned on this course were applied in a holistic approach.
-
 ## References
 * Dataset and baseline notebook copied from [Online Payments Fraud Detection Dataset | Kaggle](https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset) 
-
 * Dataset: https://www.kaggle.com/datasets/rupakroy/online-payments-fraud-detection-dataset/download?datasetVersionNumber=1
 * Baseline notebook: https://www.kaggle.com/code/nehahatti/online-payments-fraud-detection-project/notebook
 
-## Online Payments Fraud Detection
-### Introduction
-The introduction of online payment systems has helped a lot in the ease of payments. But, at the same time, it increased in payment frauds. Online payment frauds can happen with anyone using any payment system, especially while making payments using a credit card. 
 
-That is why detecting online payment fraud is very important for credit card companies to ensure that the customers are not getting charged for the products and services they never paid. 
+# About this notebook
+This notebook was taken and changed from [Kaggle](http://www.kaggle.com)
 
-### Scope
-In this final project we will apply the best practices in MLOPs to a baseline notebook to create a model to detect online payment fraud, ready to use via API.
+1. The task is to predict online payment fraud, given a number of features from online transfer/deposits transactions.
 
-### Out of Scope
-
-Since we have already have on the baseline a good recall(0.95) and F1-Score(0.93) metrics over the FRAUD cases, we will note explore another methods.
-
-Also we will not make an intensive feature analysis nor feature engineering.
+2. On Kaggle there were several notebooks related to this dataset(Decision Tree, Logistic Regresion, KNN, Gradient Boosting Classifier)
+3. As a Baseline I choose one of the most accurated and simpler one, a notebook using the Decision Tree algorithm.
 
 **Baseline Metrics**
 ```
@@ -49,6 +37,28 @@ Confussion Matrix
    macro avg       0.96      0.97      0.97   1272524
 weighted avg       1.00      1.00      1.00   1272524
 ```
+
+
+## Scope
+
+* Project focused on MLOps, where the key concepts of ML frameworks learned on this course were applied in a holistic approach.
+
+* In this project we will apply the best practices in MLOPs to a baseline notebook to create a model to predict online payment fraud, ready to use via API.
+
+### Out of Scope
+
+* Since we have already have on the baseline a good recall(0.95) and F1-Score(0.93) metrics over the FRAUD cases, we will note explore another methods.
+
+* Also we will not make an intensive feature analysis nor feature engineering.
+
+
+## Online Payments Fraud Detection
+### Introduction
+The introduction of online payment systems has helped a lot in the ease of payments. But, at the same time, it increased in payment frauds. Online payment frauds can happen with anyone using any payment system, especially while making payments using a credit card. 
+
+That is why detecting online payment fraud is very important for credit card companies to ensure that the customers are not getting charged for the products and services they never paid. 
+
+
 
 Part I 
     Definition
