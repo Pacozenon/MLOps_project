@@ -2,12 +2,15 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
 #ignore csv file >400mb
 files/*.csv
 
 #ignore virtual env files
 venv310/
 
+#ignore executable files
+*.exe
 
 # C extensions
 *.so
