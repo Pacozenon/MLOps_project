@@ -18,7 +18,7 @@ repos:
   rev: 6.0.0
   hooks:
   - id: flake8
-    args: [--ignore=E501]
+#    args: [--ignore=E501]
     types: [ python, pyi, jupyter ]
 
 - repo: https://github.com/PyCQA/autoflake
