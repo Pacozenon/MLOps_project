@@ -5,9 +5,13 @@ __pycache__/
 
 #ignore csv file >400mb
 files/*.csv
+files/
 
 #ignore virtual env files
 venv310/
+
+#Trained models
+trained_models/
 
 #ignore executable files
 *.exe
