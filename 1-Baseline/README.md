@@ -80,15 +80,46 @@ This session talks about one of the most important practices to be able to climb
 ## Setup
 ### Virtual environment
 
-1. Create a virtual environment with `Python 3.10+`
+1. Create a virtual environment with `Python 3.10+` from the root folder
     * Create venv
         ```bash
-        python3.10 -m venv venv-session-9
+        python3.10 -m venv venv310
         ```
 
     * Activate the virtual environment
         ```
-        source venv-session-9/bin/activate
+        Linux:
+        source venv310/bin/activate
+        
+        Windows:
+            ./venv310/scripts/activate.ps1
+
+        ```
+2. Change to the refactored folder 
+        ```
+        Windows
+        cd /Refactor/mlops_project/mlops_project
+
+        ```
+        
+## Install all requerimients files
+
+We have 3 requeriment files
+
+* General packages for main program
+        ```
+        git install -r ../requirements-310.txt
+
+        ```
+* API packages
+        ```
+        git install -r ./requirements_api.txt
+
+        ```
+* PyTest packages
+        ```
+        git install -r ./requirements_dev.txt
+
         ```
 
 
@@ -121,8 +152,33 @@ Once the template is created, it is time to create the folders with the code fol
 3. Migrate the notebook code to the scripts.
 
 ## Usage
-1. Change the directory to `itesm-mlops/module-3/session-9/itesm_mlops/itesm_mlops`.
-2. Run `python itesm_mlops.py` in the terminal.
+
+1. Change the directory to `Refactor/mlops_project/mlops_project`.
+2. Run `python mlops_project.py` in the terminal.
+
+## Test API
+
+1. Change the directory to `Refactor/mlops_project/mlops_project`.
+2. Run `uvicorn api.main:app --reload` in the terminal.
+
+##
+
+## Checking endpoints
+1. Access `http://127.0.0.1:8000/`, you will see a message like this `"Online Fraud Classifier is all ready to go!"`
+2. Access `http://127.0.0.1:8000/docs`, the browser will display something like this:
+
+    ![FastAPI Docs](./imgs/fast-api-docs.png)
+    
+3. Try running the sum endpoint by writing the values `3` and `5`, you will get the response body as follows
+	
+    **Response body**
+    ```bash
+    {
+    "resultado": 8
+    }
+    ```
+    ![sum](./imgs/sum.png)
+
 
 ## Activity
 Follow the instructions in the [github.md](activity/github.md) file to complete the activity.

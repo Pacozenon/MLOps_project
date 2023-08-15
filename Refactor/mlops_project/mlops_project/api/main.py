@@ -65,8 +65,8 @@ async def healthcheck():
     return "Online Fraud Classifier is all ready to go!"
 
 
-@app.post("/predict")
-def predict(Online_TX_features: OnlineTX):
+@app.post("/classify")
+def classify(Online_TX_features: OnlineTX):
     predictor = ModelClassifier(MODEL_DIRECTORY + PIPELINE_SAVE_FILE)
     X = [
         Online_TX_features.type,

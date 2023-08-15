@@ -1,13 +1,13 @@
 # FINAL PROJECT 
 
-##Project focused on MLOps, where the
+## Project focused on MLOps, where the
 key concepts of ML frameworks and their application in a holistic approach.
 
-###ITESM Instituto Tecnológico de Estudios Superiores de Monterrey
-##Subject:MLOps Machine Learning Operations
+### ITESM Instituto Tecnológico de Estudios Superiores de Monterrey
+## Subject:MLOps Machine Learning Operations
 
-###Teacher: Carlos Mejia
-###Student: Francisco Javier Torres Zenón  A01688757
+### Teacher: Carlos Mejia
+### Student: Francisco Javier Torres Zenón  A01688757
 
 Contents
 
