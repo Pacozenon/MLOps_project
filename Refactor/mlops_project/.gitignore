@@ -3,6 +3,17 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# CSV file
+load/
+files/
+
+#Data Files
+Refactor/mlops_project/mlops_project/data/
+
+#virtual environment
+venv310/
+/venv310/
+
 # C extensions
 *.so
 
